@@ -1,0 +1,6 @@
+MotionCal.app/
+MotionCal.dmg
+MotionCal
+imuread
+*.o
+images.cpp
