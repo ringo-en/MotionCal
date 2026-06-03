@@ -1,6 +1,6 @@
-OS = LINUX
+#OS = LINUX
 #OS = MACOSX
-#OS = MACOSX_CLANG
+OS = MACOSX_CLANG
 #OS = WINDOWS
 
 ifeq ($(OS), LINUX)
@@ -37,7 +37,7 @@ WXCONFIG = wx-config
 WXFLAGS = `$(WXCONFIG) --cppflags`
 CXXFLAGS = $(CFLAGS) `$(WXCONFIG) --cppflags`
 SFLAG =
-CLILIBS = -lglut -lGLU -lGL -lm
+CLILIBS = -framework OpenGL -framework GLUT -lm
 VERSION = 0.01
 
 else ifeq ($(OS), WINDOWS)
